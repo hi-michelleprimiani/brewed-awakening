@@ -22,7 +22,7 @@ const findProduct = (order, allProducts) => {
 const findEmployee = (order, allEmployees) => {
   let orderEmployee = null;
 
-  for (const employee in allEmployees) {
+  for (const employee of allEmployees) {
     if (employee.id === order.employeeId) {
       orderEmployee = employee;
     }
