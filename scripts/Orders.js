@@ -43,9 +43,9 @@ export const Orders = () => {
         order.timestamp
       ).toLocaleDateString()}</li>`;
     } else {
-      html += `<li>${product.name} was sold by ${employee.name} on ${new Date(
-        order.timestamp
-      ).toLocaleDateString()}</li>`;
+      html += `<li data-type="orders">${product.name} was sold by ${
+        employee.name
+      } on ${new Date(order.timestamp).toLocaleDateString()}</li>`;
     }
   }
 
@@ -53,6 +53,3 @@ export const Orders = () => {
 
   return html;
 };
-
-// if else statement
-// if employee name is not === to employee id
